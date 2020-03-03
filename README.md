@@ -1,0 +1,9 @@
+
+
+## Multiply 
+
+This is an application to generate multiplication table files
+
+Execute this command:
+
+````npm install`````
