@@ -1,14 +1,14 @@
 
 
-## Multiply 
+# Multiply 
 
 Este es un proyecto para generar una tabla de multiplicar.
 
-# Ejecute este comando:
+## Ejecute este comando:
 
 ```npm install```
 
-# Para crear un archivo con multiplicaciones ejecute:
+## Para crear un archivo con multiplicaciones ejecute:
 
 ```node app create --limit 6 -b 4```
 
@@ -23,7 +23,7 @@ Se imprime:
 4 * 5 = 20
 4 * 6 = 24
 ```
-# Para listar multiplicaciones por consola ejecutar:
+## Para listar multiplicaciones por consola ejecutar:
 ```node app list --limit 6 -b 5```
 
 En donde 5 es el número a multiplicar y 6 el número máximo de multiplicaciones por 5.
