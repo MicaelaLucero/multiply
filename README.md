@@ -6,7 +6,7 @@ Este es un proyecto para generar una tabla de multiplicar.
 
 #Ejecute este comando:
 
-````npm install`````
+```npm install```
 
 #Para crear un archivo con multiplicaciones ejecute:
 
