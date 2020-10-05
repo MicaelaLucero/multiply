@@ -10,7 +10,7 @@ Este es un proyecto para generar una tabla de multiplicar.
 
 #Para crear un archivo con multiplicaciones ejecute:
 
-```node app crear --limite 6 -b 4```
+```node app create --limit 6 -b 4```
 
 En donde 4 es el número a multiplicar y 6 el número máximo de multiplicaciones por 4.
 
@@ -24,7 +24,7 @@ Se imprime:
 4 * 6 = 24
 ```
 #Para listar multiplicaciones por consola ejecutar:
-```node app listar --limite 6 -b 5````
+```node app list --limit 6 -b 5````
 
 En donde 5 es el número a multiplicar y 6 el número máximo de multiplicaciones por 5.
 
