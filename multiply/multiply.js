@@ -1,26 +1,15 @@
 const fs = require("fs");
 const colors = require('colors')
 
-let listTable = (base, limit) => {
+let listTable = (base, limit = 10) => {
 
-  console.log(`====== Table of ${base} =========`.red)
-  return new Promise((resolve, reject) => {
-    if (!Number(base)) {
-      reject(`The value entered ${base} is not a number`);
-      return;
-    }
+  console.log('=================='.green);
+  console.log(`tabla de ${ base }`.green);
+  console.log('=================='.green);
 
-    let data = "";
-
-    for (i = 0; i <= limit; i++) {
-      data += `${base} * ${i} = ${base * i}\n`;
-    }
-
-    fs.writeFile(`tables/table-${base}.txt`, data, err => {
-      if (err) reject(err);
-      else resolve(`table-${base}.txt`);
-    });
-  });
+  for (let i = 1; i <= limit; i++) {
+      console.log(`${ base } * ${ i } = ${ base * i }`)
+  }
 };
 
 createFile = (base, limit = 10) => {
@@ -32,13 +21,13 @@ createFile = (base, limit = 10) => {
 
     let data = "";
 
-    for (i = 0; i <= limit; i++) {
+    for (let i = 1; i <= limit; i++) {
       data += `${base} * ${i} = ${base * i}\n`;
     }
 
-    fs.writeFile(`tables/table-${base}.txt`, data, err => {
+    fs.writeFile(`tables/table-${base}-al-${limit}.txt`, data, err => {
       if (err) reject(err);
-      else resolve(`table-${base}.txt`);
+      else resolve(`table-${base}-al-${limit}.txt`);
     });
   });
 };
